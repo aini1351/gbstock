@@ -38,7 +38,7 @@ jobs:
       - name: '运行 【京东排行榜】'
         run: |
           random_time=$(($RANDOM % 10))
-          echo "等待 ${random_time} 分钟后开始签到"
+          echo "等待 ${random_time} 分钟后开始执行"
           for((i=1; i<=${random_time}; i++));  
           do
             echo "倒计时 $[${random_time}-$i] 分钟"
@@ -56,4 +56,3 @@ jobs:
           DD_BOT_TOKEN: ${{ secrets.DD_BOT_TOKEN }}
           DD_BOT_SECRET: ${{ secrets.DD_BOT_SECRET }}
           IGOT_PUSH_KEY: ${{ secrets.IGOT_PUSH_KEY }}
-
