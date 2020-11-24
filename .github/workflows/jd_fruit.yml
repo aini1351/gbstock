@@ -6,9 +6,9 @@ name: jd_fruit
 on:
   workflow_dispatch:
   schedule:
-    - cron: '20 23,4,10 * * *'
+    - cron: '0 23,4,10,16 * * *'
   watch:
-    types: started
+    types: [started]
   repository_dispatch:
     types: fruit
 jobs:
@@ -37,7 +37,7 @@ jobs:
           npm install
       - name: '运行 【东东农场】'
         run: |
-          random_time=$(($RANDOM % 10))
+          random_time=$(($RANDOM % 5))
           echo "等待 ${random_time} 分钟后开始执行"
           for((i=1; i<=${random_time}; i++));  
           do
