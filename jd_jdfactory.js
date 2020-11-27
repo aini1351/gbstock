@@ -312,7 +312,7 @@ async function doTask() {
       //从数码电器首页进入
       if (item.status === 1) {
         console.log(`准备做此任务：${item.taskName}`);
-        // await jdfactory_collectScore(item.simpleRecordInfoVo.taskToken);
+        await jdfactory_collectScore(item.simpleRecordInfoVo.taskToken);
       } else {
         console.log(`${item.taskName}已完成`);
       }
@@ -499,6 +499,7 @@ function jdfactory_getHomeData() {
           console.log(`${$.name} API请求失败，请检查网路重试`)
         } else {
           if (safeGet(data)) {
+            console.log(data);
             data = JSON.parse(data);
             if (data.data.bizCode === 0) {
               $.haveProduct = data.data.result.haveProduct;
