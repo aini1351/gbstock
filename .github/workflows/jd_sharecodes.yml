@@ -23,8 +23,9 @@ jobs:
           repository: duandaxei/jd_scripts
       - name: '运行 【互助码自动上车】'
         run: |
+          cd .github
           chmod +x jd_sharecodes.sh
-          ./.github/jd_sharecodes.sh
+          ./jd_sharecodes.sh
         env:
           PETSHARECODES: ${{ secrets.PETSHARECODES }}
           FRUITSHARECODES: ${{ secrets.FRUITSHARECODES }}
