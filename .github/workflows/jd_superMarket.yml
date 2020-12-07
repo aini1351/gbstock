@@ -6,11 +6,11 @@ name: jd_superMarket
 on:
   workflow_dispatch:
   schedule:
-    - cron: '15 */3 * * *'
+    - cron: '0 */4 * * *'
   watch:
-    types: started
+    types: [started]
   repository_dispatch:
-    types: superMarket
+    types: jd_superMarket
 jobs:
   build:
 
@@ -37,7 +37,7 @@ jobs:
           npm install
       - name: '运行 【东东超市】'
         run: |
-          random_time=$(($RANDOM % 10))
+          random_time=$(($RANDOM % 25))
           echo "等待 ${random_time} 分钟后开始执行"
           for((i=1; i<=${random_time}; i++));  
           do

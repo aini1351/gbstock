@@ -8,9 +8,9 @@ on:
   schedule:
     - cron: '0 17 * * *'
   watch:
-    types: started
+    types: [started]
   repository_dispatch:
-    types: redPacket
+    types: jd_redPacket
 jobs:
   build:
 
@@ -37,7 +37,7 @@ jobs:
           npm install
       - name: '运行 【全民开红包脚本】'
         run: |
-          random_time=$(($RANDOM % 3))
+          random_time=$(($RANDOM % 10))
           echo "等待 ${random_time} 分钟后开始执行"
           for((i=1; i<=${random_time}; i++));  
           do

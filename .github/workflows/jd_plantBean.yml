@@ -6,11 +6,11 @@ name: jd_plantBean
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 23,0-14/1,16 * * *' #此处为UTC-0时间
+    - cron: '0 23,0-14/2,16 * * *' #此处为UTC-0时间
   watch:
     types: [started]
   repository_dispatch:
-    types: plantBean
+    types: jd_plantBean
 jobs:
   build:
 
@@ -37,7 +37,7 @@ jobs:
           npm install
       - name: '运行 【种豆得豆】'
         run: |
-          random_time=$(($RANDOM % 5))
+          random_time=$(($RANDOM % 10))
           echo "等待 ${random_time} 分钟后开始执行"
           for((i=1; i<=${random_time}; i++));  
           do

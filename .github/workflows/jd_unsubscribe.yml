@@ -6,11 +6,11 @@ name: jd_unsubscribe
 on:
   workflow_dispatch:
   schedule:
-    - cron: '45 15 * * *'
+    - cron: '0 15 * * *'
   watch:
-        types: started
+    types: [started]
   repository_dispatch:
-    types: unsubscribe
+    types: jd_unsubscribe
 jobs:
   build:
 
@@ -37,7 +37,7 @@ jobs:
           npm install
       - name: '运行 【京东取关商品】'
         run: |
-          random_time=$(($RANDOM % 10))
+          random_time=$(($RANDOM % 45))
           echo "等待 ${random_time} 分钟后开始执行"
           for((i=1; i<=${random_time}; i++));  
           do

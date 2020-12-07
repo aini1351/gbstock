@@ -8,7 +8,7 @@ on:
   schedule:
     - cron: '5 */3 * * *'
   watch:
-    types: started
+    types: [started]
   repository_dispatch:
     types: jd_pigPet
 jobs:
@@ -37,7 +37,7 @@ jobs:
           npm install
       - name: '运行 【金融养猪】'
         run: |
-          random_time=$(($RANDOM % 30))
+          random_time=$(($RANDOM % 10))
           echo "等待 ${random_time} 分钟后开始执行"
           for((i=1; i<=${random_time}; i++));  
           do

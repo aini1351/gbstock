@@ -8,9 +8,9 @@ on:
   schedule:
     - cron: '0 16,22 * * *'
   watch:
-    types: started
+    types: [started]
   repository_dispatch:
-    types: joy_steal
+    types: jd_joy_steal
 jobs:
   build:
 
