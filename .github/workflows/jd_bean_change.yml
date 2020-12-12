@@ -37,7 +37,7 @@ jobs:
           npm install
       - name: '运行 【京豆变动通知】'
         run: |
-          random_time=$(($RANDOM % 10))
+          random_time=$(($RANDOM % 39))
           echo "等待 ${random_time} 分钟后开始执行"
           for((i=1; i<=${random_time}; i++));  
           do
