@@ -12,7 +12,7 @@ JDZZ_SHARECODES_ARR=($JDZZ_SHARECODES)
 echo 'FRUITSHARECODES_ARR:'${FRUITSHARECODES_ARR}'/'
 
 IFS=$'\n'
-for sharecode in ${FRUITSHARECODES_ARR[$'\n']}
+for sharecode in ${FRUITSHARECODES_ARR[@]}
     do
         IFS="@"
         for sc in ${sharecode[@]}
@@ -23,7 +23,7 @@ for sharecode in ${FRUITSHARECODES_ARR[$'\n']}
     done
 
 IFS=$'\n'
-for sharecode in ${PETSHARECODES_ARR}
+for sharecode in ${PETSHARECODES_ARR[@]}
     do
         IFS="@"
         for sc in ${sharecode[@]}
@@ -34,7 +34,7 @@ for sharecode in ${PETSHARECODES_ARR}
     done
 
 IFS=$'\n'
-for sharecode in ${PLANT_BEAN_SHARECODES_ARR}
+for sharecode in ${PLANT_BEAN_SHARECODES_ARR[@]}
     do
         IFS="@"
         for sc in ${sharecode[@]}
@@ -45,7 +45,7 @@ for sharecode in ${PLANT_BEAN_SHARECODES_ARR}
     done
 
 IFS=$'\n'
-for sharecode in ${DREAM_FACTORY_SHARE_CODES_ARR}
+for sharecode in ${DREAM_FACTORY_SHARE_CODES_ARR[@]}
     do
         IFS="@"
         for sc in ${sharecode[@]}
@@ -56,7 +56,7 @@ for sharecode in ${DREAM_FACTORY_SHARE_CODES_ARR}
     done
 
 IFS=$'\n'
-for sharecode in ${DDFACTORY_SHARECODES_ARR}
+for sharecode in ${DDFACTORY_SHARECODES_ARR[@]}
     do
         IFS="@"
         for sc in ${sharecode[@]}
@@ -67,7 +67,7 @@ for sharecode in ${DDFACTORY_SHARECODES_ARR}
     done
 
 IFS=$'\n'
-for sharecode in ${JDZZ_SHARECODES_ARR}
+for sharecode in ${JDZZ_SHARECODES_ARR[@]}
     do
         IFS="@"
         for sc in ${sharecode[@]}
