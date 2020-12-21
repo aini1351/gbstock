@@ -27,8 +27,9 @@ jobs:
           chmod +x jd_sharecodes.sh
           ./jd_sharecodes.sh
         env:
-          PETSHARECODES: ${{ secrets.PETSHARECODES }}
           FRUITSHARECODES: ${{ secrets.FRUITSHARECODES }}
+          PETSHARECODES: ${{ secrets.PETSHARECODES }}
           PLANT_BEAN_SHARECODES: ${{ secrets.PLANT_BEAN_SHARECODES }}
-          DDFACTORY_SHARECODES: ${{ secrets.DDFACTORY_SHARECODES }}
           DREAM_FACTORY_SHARE_CODES: ${{ secrets.DREAM_FACTORY_SHARE_CODES }}
+          DDFACTORY_SHARECODES: ${{ secrets.DDFACTORY_SHARECODES }}
+          JDZZ_SHARECODES: ${{ secrets.JDZZ_SHARECODES }}
