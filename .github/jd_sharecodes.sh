@@ -20,6 +20,7 @@ for sharecode in ${FRUITSHARECODES_ARR[@]}
                 echo 'FRUIT: http://api.turinglabs.net/api/v1/jd/farm/create/'${sc}'/'
                 curl 'http://api.turinglabs.net/api/v1/jd/farm/create/'${sc}'/' -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:79.0) Gecko/20100101 Firefox/79.0' -H 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8' -H 'Accept-Language: en-US,zh-CN;q=0.8,zh;q=0.7,zh-TW;q=0.5,zh-HK;q=0.3,en;q=0.2' --compressed -H 'DNT: 1' -H 'Connection: keep-alive'
                 echo
+                sleep 30
             done
     done
 
@@ -32,6 +33,7 @@ for sharecode in ${PETSHARECODES_ARR[@]}
                 echo 'PET: http://api.turinglabs.net/api/v1/jd/pet/create/'${sc}'/'
                 curl 'http://api.turinglabs.net/api/v1/jd/pet/create/'${sc}'/' -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:79.0) Gecko/20100101 Firefox/79.0' -H 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8' -H 'Accept-Language: en-US,zh-CN;q=0.8,zh;q=0.7,zh-TW;q=0.5,zh-HK;q=0.3,en;q=0.2' --compressed -H 'DNT: 1' -H 'Connection: keep-alive'
                 echo
+                sleep 30
             done
     done
 
@@ -44,6 +46,7 @@ for sharecode in ${PLANT_BEAN_SHARECODES_ARR[@]}
                 echo 'PLANT_BEAN: http://api.turinglabs.net/api/v1/jd/bean/create/'${sc}'/'
                 curl 'http://api.turinglabs.net/api/v1/jd/bean/create/'${sc}'/' -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:79.0) Gecko/20100101 Firefox/79.0' -H 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8' -H 'Accept-Language: en-US,zh-CN;q=0.8,zh;q=0.7,zh-TW;q=0.5,zh-HK;q=0.3,en;q=0.2' --compressed -H 'DNT: 1' -H 'Connection: keep-alive'
                 echo
+                sleep 30
             done
     done
 
@@ -56,6 +59,7 @@ for sharecode in ${DREAM_FACTORY_SHARE_CODES_ARR[@]}
                 echo 'JXFACTORY: http://api.turinglabs.net/api/v1/jd/jxfactory/create/'${sc}'/'
                 curl 'http://api.turinglabs.net/api/v1/jd/jxfactory/create/'${sc}'/' -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:79.0) Gecko/20100101 Firefox/79.0' -H 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8' -H 'Accept-Language: en-US,zh-CN;q=0.8,zh;q=0.7,zh-TW;q=0.5,zh-HK;q=0.3,en;q=0.2' --compressed -H 'DNT: 1' -H 'Connection: keep-alive'
                 echo
+                sleep 30
             done
     done
 
@@ -68,6 +72,7 @@ for sharecode in ${DDFACTORY_SHARECODES_ARR[@]}
                 echo 'DDFACTORY: http://api.turinglabs.net/api/v1/jd/ddfactory/create/'${sc}'/'
                 curl 'http://api.turinglabs.net/api/v1/jd/ddfactory/create/'${sc}'/' -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:79.0) Gecko/20100101 Firefox/79.0' -H 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8' -H 'Accept-Language: en-US,zh-CN;q=0.8,zh;q=0.7,zh-TW;q=0.5,zh-HK;q=0.3,en;q=0.2' --compressed -H 'DNT: 1' -H 'Connection: keep-alive'
                 echo
+                sleep 30
             done
     done
 
@@ -80,5 +85,6 @@ for sharecode in ${JDZZ_SHARECODES_ARR[@]}
                 echo 'JDZZ: https://code.chiang.fun/api/v1/jd/jdzz/create/'${sc}'/'
                 curl 'https://code.chiang.fun/api/v1/jd/jdzz/create/'${sc}'/' -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:79.0) Gecko/20100101 Firefox/79.0' -H 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8' -H 'Accept-Language: en-US,zh-CN;q=0.8,zh;q=0.7,zh-TW;q=0.5,zh-HK;q=0.3,en;q=0.2' --compressed -H 'DNT: 1' -H 'Connection: keep-alive'
                 echo
+                sleep 30
             done
     done
