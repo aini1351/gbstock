@@ -3,7 +3,7 @@
 # 复制自:
 # https://github.com/lifeishard4me/Actions/
 
-IFS='\n'
+IFS=$oldIFS
 FRUITSHARECODES_ARR=($FRUITSHARECODES)
 PETSHARECODES_ARR=($PETSHARECODES)
 PLANT_BEAN_SHARECODES_ARR=($PLANT_BEAN_SHARECODES)
@@ -11,6 +11,7 @@ DREAM_FACTORY_SHARE_CODES_ARR=($DREAM_FACTORY_SHARE_CODES)
 DDFACTORY_SHARECODES_ARR=($DDFACTORY_SHARECODES)
 JDZZ_SHARECODES_ARR=($JDZZ_SHARECODES)
 
+IFS='\n'
 for sharecode in ${FRUITSHARECODES_ARR}
     do
         IFS="@"
@@ -21,6 +22,7 @@ for sharecode in ${FRUITSHARECODES_ARR}
             done
     done
 
+IFS='\n'
 for sharecode in ${PETSHARECODES_ARR}
     do
         echo "PET: ${sharecode}"
