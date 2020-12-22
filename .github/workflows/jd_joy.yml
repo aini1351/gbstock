@@ -61,5 +61,7 @@ jobs:
           IGOT_PUSH_KEY: ${{ secrets.IGOT_PUSH_KEY }}
           QQ_SKEY: ${{ secrets.QQ_SKEY}}
           QQ_MODE: ${{ secrets.QQ_MODE}}
+          PUSH_PLUS_TOKEN: ${{ secrets.PUSH_PLUS_TOKEN}}
+          PUSH_PLUS_USER: ${{ secrets.PUSH_PLUS_USER}}
           JOY_FEED_COUNT: ${{ secrets.JOY_FEED_COUNT }}
           JOY_RUN_FLAG: ${{ secrets.JOY_RUN_FLAG }}
