@@ -6,7 +6,7 @@ name: jd_joy_steal
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 10,16,22 * * *'
+    - cron: '0 17,23 * * *'
   watch:
     types: [started]
   repository_dispatch:
@@ -37,7 +37,7 @@ jobs:
           npm install
       - name: '运行 【宠汪汪偷好友狗粮与积分】'
         run: |
-          random_time=$(($RANDOM % 5))
+          random_time=$(($RANDOM % 15))
           echo "等待 ${random_time} 分钟后开始执行"
           for((i=1; i<=${random_time}; i++));  
           do
