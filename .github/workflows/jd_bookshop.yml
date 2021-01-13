@@ -64,4 +64,5 @@ jobs:
           QQ_MODE: ${{ secrets.QQ_MODE}}
           PUSH_PLUS_TOKEN: ${{ secrets.PUSH_PLUS_TOKEN}}
           PUSH_PLUS_USER: ${{ secrets.PUSH_PLUS_USER}}
+          PURCHASE_SHOPS: ${{ secrets.PURCHASE_SHOPS}}
           BOOKSHOP_SHARECODES: ${{ secrets.BOOKSHOP_SHARECODES}}
