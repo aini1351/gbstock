@@ -65,4 +65,4 @@ jobs:
           PUSH_PLUS_TOKEN: ${{ secrets.PUSH_PLUS_TOKEN}}
           PUSH_PLUS_USER: ${{ secrets.PUSH_PLUS_USER}}
           JXNC_SHARECODES: ${{ secrets.JXNC_SHARECODES}}
-          JxncTokens: ${{ secrets.JxncTokens}}
+          JXNCTOKENS: ${{ secrets.JXNCTOKENS}}
