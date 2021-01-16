@@ -34,3 +34,4 @@ jobs:
           DDFACTORY_SHARECODES: ${{ secrets.DDFACTORY_SHARECODES }}
           JDZZ_SHARECODES: ${{ secrets.JDZZ_SHARECODES }}
           JDJOY_SHARECODES: ${{ secrets.JDJOY_SHARECODES }}
+          JD_CASH_SHARECODES: ${{ secrets.JD_CASH_SHARECODES }}
