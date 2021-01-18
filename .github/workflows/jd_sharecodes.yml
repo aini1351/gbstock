@@ -19,8 +19,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-        with:
-          repository: duandaxei/jd_scripts
       - name: '运行 【互助码自动上车】'
         run: |
           cd .github
