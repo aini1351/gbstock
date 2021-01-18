@@ -20,9 +20,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
         with:
-          repository: wallinwind/gbstock
-       with:
-          repository: wallinwind/gbstock
+          repository: wallinwind/gdstock
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         with:
