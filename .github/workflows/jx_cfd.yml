@@ -6,7 +6,7 @@ name: jx_cfd
 on:
   workflow_dispatch:
   schedule:
-    - cron: '10 * * * *'
+    - cron: '0 * * * *'
   watch:
     types: [started]
   repository_dispatch:
@@ -62,3 +62,4 @@ jobs:
           QQ_MODE: ${{ secrets.QQ_MODE}}
           PUSH_PLUS_TOKEN: ${{ secrets.PUSH_PLUS_TOKEN}}
           PUSH_PLUS_USER: ${{ secrets.PUSH_PLUS_USER}}
+          JXNCTOKENS: ${{ secrets.JXNCTOKENS}}
