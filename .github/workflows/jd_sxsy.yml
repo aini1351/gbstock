@@ -56,3 +56,4 @@ jobs:
           PUSH_PLUS_TOKEN: ${{ secrets.PUSH_PLUS_TOKEN}}
           PUSH_PLUS_USER: ${{ secrets.PUSH_PLUS_USER}}
           JD_IMMORTAL_LATLON: ${{ secrets.JD_IMMORTAL_LATLON}}
+          JDSXSY_SHARECODES: ${{ secrets.JDSXSY_SHARECODES}}
