@@ -35,7 +35,7 @@ jobs:
           npm install
       - name: '运行 【东东超市兑换奖品】'
         run: |
-          node jd_blueCoin1.js
+          node jd_blueCoin.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE }}
           JD_USER_AGENT: ${{ secrets.JD_USER_AGENT}}
@@ -57,4 +57,3 @@ jobs:
           PUSH_PLUS_USER: ${{ secrets.PUSH_PLUS_USER}}
           MARKET_COIN_TO_BEANS: ${{ secrets.MARKET_COIN_TO_BEANS }}
           MARKET_REWARD_NOTIFY: ${{ secrets.MARKET_REWARD_NOTIFY }}
-          
