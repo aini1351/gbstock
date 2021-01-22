@@ -6,7 +6,7 @@ name: jd_superMarket
 on:
   workflow_dispatch:
   schedule:
-    - cron: '11 1,6,11,20 * * *'
+    - cron: '11 1-23/5 * * *'
   watch:
     types: [started]
   repository_dispatch:
@@ -35,13 +35,6 @@ jobs:
           npm install
       - name: '运行 【东东超市】'
         run: |
-          random_time=$(($RANDOM % 15))
-          echo "等待 ${random_time} 分钟后开始执行"
-          for((i=1; i<=${random_time}; i++));  
-          do
-            echo "倒计时 $[${random_time}-$i] 分钟"
-            sleep 1m
-          done
           node jd_superMarket.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE }}
@@ -64,5 +57,4 @@ jobs:
           PUSH_PLUS_USER: ${{ secrets.PUSH_PLUS_USER}}
           SUPERMARKET_UPGRADE: ${{ secrets.SUPERMARKET_UPGRADE }}
           SUPERMARKET_LOTTERY: ${{ secrets.SUPERMARKET_LOTTERY }}
-          jdBusinessCircleJump: ${{ secrets.BUSINESS_CIRCLE_JUMP }}
-          SUPERMARKET_SHARECODES: ${{ secrets.SUPERMARKET_SHARECODES }}
+          jdBusinessCircleJump: ${{ secrets.jdBusinessCircleJump }}
