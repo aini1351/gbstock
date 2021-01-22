@@ -6,7 +6,7 @@ name: jd_blueCoin
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0,30 17 * * *'
+    - cron: '0-3 16 * * *'
   watch:
     types: [started]
   repository_dispatch:
@@ -35,13 +35,6 @@ jobs:
           npm install
       - name: '运行 【东东超市兑换奖品】'
         run: |
-          random_time=$(($RANDOM % 15))
-          echo "等待 ${random_time} 分钟后开始执行"
-          for((i=1; i<=${random_time}; i++));  
-          do
-            echo "倒计时 $[${random_time}-$i] 分钟"
-            sleep 1m
-          done
           node jd_blueCoin.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE }}
