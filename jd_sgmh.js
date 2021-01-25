@@ -31,6 +31,7 @@ const inviteCodes = [
   'T0146qQkGVpIqQ2BdQCjVWmIaW5kRrbA',
   'T01297gmAl1ZqguLCjVWmIaW5kRrbA',
   'T0225KkcREgc9QbQc0z2l_RYIQCjVWmIaW5kRrbA'
+];
 const randomCount = $.isNode() ? 20 : 5;
 const notify = $.isNode() ? require('./sendNotify') : '';
 let merge = {}
