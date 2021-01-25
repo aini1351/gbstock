@@ -50,8 +50,8 @@ const inviteCodes = [
   `cgxZezjVff6LtlefXUnljBxwMQZbYMqwYyJodD6P@cgxZZiTXZvmatVGVREnK5t9gAzRgfeVzrggd@cgxZdTXtIOzf6lzOW1Or7DL-Cxx_yLNUNOfJ8HrP7_FtEaAzmTti5suTXmg`
 ];
 const pkInviteCodes = [
-  'IgNWdiLGaPadvlqJQnnKp27-YpAvKvSYNTSkTGvZylf_0wcvqD9EMkohEd8@IgNWdiLGaPaZskfACQyhgLSpZWps-WtQEW3McifV@IgNWdiLGaPaAvmHPAQf769XqjJjMyRirPzN9-AS-WHY9Y_G7t9Cwe5gdiI2qEvHZ',
-  'IgNWdiLGaPadvlqJQnnKp27-YpAvKvSYNTSkTGvZylf_0wcvqD9EMkohEd8@IgNWdiLGaPaZskfACQyhgLSpZWps-WtQEW3McifV@IgNWdiLGaPaAvmHPAQf769XqjJjMyRirPzN9-AS-WHY9Y_G7t9Cwe5gdiI2qEvHZ'
+  'IgNWdiLGaPaOs1mQTFT1toSdfDbMBstzqlsk_q8_7tRpDqlI@IgNWdiLGaPaTr1uLS0X2sDq2ZHB466BZVVJ7luLsU3TuyA@IgNWdiLGaPaAvmHNXgCpvRFMaLAzDOL0hUd2UfhNm177ceeeGUK8-ynemFvAR2kh',
+  'IgNWdiLGaPaOs1mQTFT1toSdfDbMBstzqlsk_q8_7tRpDqlI@IgNWdiLGaPaTr1uLS0X2sDq2ZHB466BZVVJ7luLsU3TuyA@IgNWdiLGaPaAvmHNXgCpvRFMaLAzDOL0hUd2UfhNm177ceeeGUK8-ynemFvAR2kh'
 ]
 !(async () => {
   await requireConfig();
