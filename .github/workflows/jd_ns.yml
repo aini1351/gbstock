@@ -56,3 +56,4 @@ jobs:
           PUSH_PLUS_TOKEN: ${{ secrets.PUSH_PLUS_TOKEN}}
           PUSH_PLUS_USER: ${{ secrets.PUSH_PLUS_USER}}
           JDNIAN_SHARECODES: ${{ secrets.JDNIAN_SHARECODES}}
+          JDNIANPK_SHARECODES: ${{ secrets.JDNIANPK_SHARECODES}}
