@@ -6,7 +6,7 @@ name: jd_joy
 on:
   workflow_dispatch:
   schedule:
-    - cron: '15 1 * * *'
+    - cron: '15 0-23/2 * * *'
   watch:
     types: [started]
   repository_dispatch:
@@ -35,13 +35,6 @@ jobs:
           npm install
       - name: '运行 【宠汪汪】'
         run: |
-          random_time=$(($RANDOM % 15))
-          echo "等待 ${random_time} 分钟后开始执行"
-          for((i=1; i<=${random_time}; i++));  
-          do
-            echo "倒计时 $[${random_time}-$i] 分钟"
-            sleep 1m
-          done
           node jd_joy.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE }}
