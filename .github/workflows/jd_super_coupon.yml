@@ -6,7 +6,7 @@ name: jd_super_coupon
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 * * * *'
+    - cron: '1 23 * * *'
   watch:
     types: [started]
   repository_dispatch:
