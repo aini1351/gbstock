@@ -35,7 +35,7 @@ jobs:
           npm install
       - name: '运行 【京东神仙书院答题】'
         run: |
-          node jd_immortal_answer.js
+          node jd_dati.js  #jd_immortal_answer.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE }}
           JD_USER_AGENT: ${{ secrets.JD_USER_AGENT}}
