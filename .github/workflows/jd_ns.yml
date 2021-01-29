@@ -35,7 +35,7 @@ jobs:
           npm install
       - name: '运行 【京东炸年兽】'
         run: |
-          node _jd_ns.js
+          node jd_ns.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE }}
           JD_USER_AGENT: ${{ secrets.JD_USER_AGENT}}
