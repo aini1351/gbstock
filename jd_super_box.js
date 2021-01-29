@@ -36,8 +36,8 @@ let cookiesArr = [], cookie = '', message;
 const randomCount = $.isNode() ? 20 : 5;
 
 const inviteCodes = [
-  ``,
-  ``,
+  `TB8hGV27OxMzfIuAZgn8Gg@qtyPe25Fc1nHlxn_C66-mQ@YpGzJdJGeKmh8-4QnjjnBeXGNt0FillOsZ6zBjt-uP8`,
+  `TB8hGV27OxMzfIuAZgn8Gg@qtyPe25Fc1nHlxn_C66-mQ@YpGzJdJGeKmh8-4QnjjnBeXGNt0FillOsZ6zBjt-uP8`,
 ];
 
 if ($.isNode()) {
