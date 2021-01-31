@@ -36,9 +36,6 @@ jobs:
       - name: '运行 【小鸽有礼】'
         run: |
           node jd_xg.js
-      - name: '运行 【小鸽有礼2】'
-        run: |
-          node jd_xgyl.ks
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE }}
           JD_USER_AGENT: ${{ secrets.JD_USER_AGENT}}
