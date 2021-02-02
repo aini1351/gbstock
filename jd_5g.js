@@ -47,7 +47,7 @@ if ($.isNode()) {
 const JD_API_HOST = 'https://rdcseason.m.jd.com/api/';
 const inviteCodes = [
   'ac15bc9c-5f42-4b68-8515-1192416e6821@40d05884-520d-4ef6-b48c-0e4709b0906a@f9c36a5b-2ac3-46d2-a854-e3cd4da7ab23',
-  'ac15bc9c-5f42-4b68-8515-1192416e6821@40d05884-520d-4ef6-b48c-0e4709b0906a@f9c36a5b-2ac3-46d2-a854-e3cd4da7ab23
+  'ac15bc9c-5f42-4b68-8515-1192416e6821@40d05884-520d-4ef6-b48c-0e4709b0906a@f9c36a5b-2ac3-46d2-a854-e3cd4da7ab23'
 ];
 !(async () => {
   await requireConfig();
