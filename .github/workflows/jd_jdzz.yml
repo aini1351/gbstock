@@ -35,7 +35,7 @@ jobs:
           npm install
       - name: '运行 【京东赚赚】'
         run: |
-          node jd_jdzz.js
+          node _jd_jdzz.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE }}
           JD_USER_AGENT: ${{ secrets.JD_USER_AGENT}}
