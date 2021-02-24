@@ -10,6 +10,7 @@
 let shareCodes = [
   'T01297gmAl1ZqguLCjVWnYaS5kRrbA@T0225KkcREgc9QbQc0z2l_RYIQCjVWnYaS5kRrbA',//账号一的好友shareCode,不同好友中间用@符号隔开
   'T0225KkcREgc9QbQc0z2l_RYIQCjVWnYaS5kRrbA@T0146qQkGVpIqQ2BdQCjVWnYaS5kRrbA',//账号二的好友shareCode，不同好友中间用@符号隔开
+  'T0146qQkGVpIqQ2BdQCjVWnYaS5kRrbA@T01297gmAl1ZqguLCjVWnYaS5kRrbA',
 ]
 // 判断github action里面是否有东东工厂互助码
 if (process.env.DDFACTORY_SHARECODES) {
