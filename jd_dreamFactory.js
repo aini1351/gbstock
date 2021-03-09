@@ -41,9 +41,8 @@ let tuanActiveId = `6S9y4sJUfA2vPQP6TLdVIQ==`;
 const jxOpenUrl = `openjd://virtual?params=%7B%20%22category%22:%20%22jump%22,%20%22des%22:%20%22m%22,%20%22url%22:%20%22https://wqsd.jd.com/pingou/dream_factory/index.html%22%20%7D`;
 let cookiesArr = [], cookie = '', message = '';
 const inviteCodes = [
-  'nLRg2Blu71e6SsT65ehbzw==@4Hsn6QHhD1kf8SWtwxXoA==',
-  "4Hsn6QHhD1kf8SWtwxXoA==@Mquwod3b64EirV-hKeLlPw==",
-  'Mquwod3b64EirV-hKeLlPw==@nLRg2Blu71e6SsT65ehbzw=='
+  'Mquwod3b64EirV-hKeLlPw==@nLRg2Blu71e6SsT65ehbzw==',
+  "Mquwod3b64EirV-hKeLlPw==@nLRg2Blu71e6SsT65ehbzw=="
 ];
 const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';
 $.tuanIds = [];
