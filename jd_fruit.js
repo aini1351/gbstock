@@ -30,9 +30,9 @@ let cookiesArr = [], cookie = '', jdFruitShareArr = [], isBox = false, notify, n
 //下面给出两个账号的填写示例（iOS只支持2个京东账号）
 let shareCodes = [ // 这个列表填入你要助力的好友的shareCode
    //账号一的好友shareCode,不同好友的shareCode中间用@符号隔开
-  '1f032c427858462eb16c72ee29aae2dc@a092491ae4d8438f94b2df59f02b0661@87aee6feca33474fb808e1eda5f0ba4d',
+  '1f032c427858462eb16c72ee29aae2dc@a092491ae4d8438f94b2df59f02b0661',
   //账号二的好友shareCode,不同好友的shareCode中间用@符号隔开
-  '1f032c427858462eb16c72ee29aae2dc@a092491ae4d8438f94b2df59f02b0661@87aee6feca33474fb808e1eda5f0ba4d',
+  '1f032c427858462eb16c72ee29aae2dc@a092491ae4d8438f94b2df59f02b0661',
 ]
 let message = '', subTitle = '', option = {}, isFruitFinished = false;
 const retainWater = 100;//保留水滴大于多少g,默认100g;
