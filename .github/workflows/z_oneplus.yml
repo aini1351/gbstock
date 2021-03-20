@@ -6,7 +6,7 @@ name: z_oneplus
 on:
   workflow_dispatch:
   schedule:
-    - cron: '11 4 * 3 *'
+    - cron: '11 10 * 3 *'
   watch:
     types: [started]
   repository_dispatch:
