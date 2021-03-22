@@ -11,7 +11,7 @@ name: z_city_cash
 on:
   workflow_dispatch:
   schedule:
-    - cron: '12 16 19-25 3'
+    - cron: '12 16 19-25 3 *'
   watch:
     types: [started]
   repository_dispatch:
