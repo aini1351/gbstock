@@ -6,7 +6,7 @@ name: monk_skyworth_car
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 4,10,16,22 * * *'
+    - cron: '15 0 2-19 4 *'
   watch:
     types: [started]
   repository_dispatch:
