@@ -6,7 +6,7 @@ name: jd_super_redrain
 on:
   workflow_dispatch:
   schedule:
-    - cron: '58 59 0-23/1 * * *'
+    - cron: '0 0-23/1 * * *'
   watch:
     types: [started]
   repository_dispatch:
